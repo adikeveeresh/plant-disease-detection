@@ -114,7 +114,7 @@ const App = () => {
     const callGeminiText = async (problem) => {
         const prompt = `Based on the following plant/field problem: "${problem}", suggest specific types of fertilizers, pesticides, or other remedies that could cure this damage. Also, mention any general advice for prevention or management. Provide a concise list of recommendations.`;
         let chatHistory = [];
-        chatHistory.push({ role: "user", parts: [{ text: prompt }] });
+        chatHistory.push({ role: "user", parts: [{ text: prompt }] });      
 
         const payload = { contents: chatHistory };
         const apiKey = import.meta.env.VITE_API_KEY; // API key will be provided by the Canvas environment
